@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D61CB5D1BB8173D0035B7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */; };
+		9D61CB5F1BB8173D0035B7DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB5E1BB8173D0035B7DD /* ViewController.swift */; };
+		9D61CB621BB8173D0035B7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB601BB8173D0035B7DD /* Main.storyboard */; };
+		9D61CB641BB8173D0035B7DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB631BB8173D0035B7DD /* Images.xcassets */; };
+		9D61CB671BB8173D0035B7DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB651BB8173D0035B7DD /* LaunchScreen.xib */; };
+		9D61CB731BB8173D0035B7DD /* Global_Village_SupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB721BB8173D0035B7DD /* Global_Village_SupportTests.swift */; };
+		9D61CB861BB81F360035B7DD /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB7F1BB81F360035B7DD /* SVIndefiniteAnimatedView.m */; };
+		9D61CB871BB81F360035B7DD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB811BB81F360035B7DD /* SVProgressHUD.bundle */; };
+		9D61CB881BB81F360035B7DD /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB831BB81F360035B7DD /* SVProgressHUD.m */; };
+		9D61CB891BB81F360035B7DD /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB851BB81F360035B7DD /* SVRadialGradientLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D61CB6D1BB8173D0035B7DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D61CB4F1BB8173D0035B7DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D61CB561BB8173D0035B7DD;
+			remoteInfo = "Global Village Support";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D61CB571BB8173D0035B7DD /* Global Village Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Village Support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D61CB5B1BB8173D0035B7DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D61CB5E1BB8173D0035B7DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D61CB611BB8173D0035B7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D61CB631BB8173D0035B7DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D61CB661BB8173D0035B7DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9D61CB6C1BB8173D0035B7DD /* Global Village SupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Global Village SupportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D61CB711BB8173D0035B7DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D61CB721BB8173D0035B7DD /* Global_Village_SupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_Village_SupportTests.swift; sourceTree = "<group>"; };
+		9D61CB7E1BB81F360035B7DD /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		9D61CB7F1BB81F360035B7DD /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		9D61CB801BB81F360035B7DD /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		9D61CB811BB81F360035B7DD /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		9D61CB821BB81F360035B7DD /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		9D61CB831BB81F360035B7DD /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		9D61CB841BB81F360035B7DD /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		9D61CB851BB81F360035B7DD /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		9D61CB8B1BB820F10035B7DD /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D61CB541BB8173D0035B7DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D61CB691BB8173D0035B7DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D61CB4E1BB8173D0035B7DD = {
+			isa = PBXGroup;
+			children = (
+				9D61CB591BB8173D0035B7DD /* Global Village Support */,
+				9D61CB6F1BB8173D0035B7DD /* Global Village SupportTests */,
+				9D61CB581BB8173D0035B7DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D61CB581BB8173D0035B7DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB571BB8173D0035B7DD /* Global Village Support.app */,
+				9D61CB6C1BB8173D0035B7DD /* Global Village SupportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D61CB591BB8173D0035B7DD /* Global Village Support */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB7C1BB81F360035B7DD /* Library */,
+				9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */,
+				9D61CB5E1BB8173D0035B7DD /* ViewController.swift */,
+				9D61CB601BB8173D0035B7DD /* Main.storyboard */,
+				9D61CB631BB8173D0035B7DD /* Images.xcassets */,
+				9D61CB651BB8173D0035B7DD /* LaunchScreen.xib */,
+				9D61CB5A1BB8173D0035B7DD /* Supporting Files */,
+				9D61CB8B1BB820F10035B7DD /* Header.h */,
+			);
+			path = "Global Village Support";
+			sourceTree = "<group>";
+		};
+		9D61CB5A1BB8173D0035B7DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB5B1BB8173D0035B7DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D61CB6F1BB8173D0035B7DD /* Global Village SupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB721BB8173D0035B7DD /* Global_Village_SupportTests.swift */,
+				9D61CB701BB8173D0035B7DD /* Supporting Files */,
+			);
+			path = "Global Village SupportTests";
+			sourceTree = "<group>";
+		};
+		9D61CB701BB8173D0035B7DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB711BB8173D0035B7DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D61CB7C1BB81F360035B7DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB7D1BB81F360035B7DD /* SVProgressHUD */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		9D61CB7D1BB81F360035B7DD /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9D61CB7E1BB81F360035B7DD /* SVIndefiniteAnimatedView.h */,
+				9D61CB7F1BB81F360035B7DD /* SVIndefiniteAnimatedView.m */,
+				9D61CB801BB81F360035B7DD /* SVProgressHUD-Prefix.pch */,
+				9D61CB811BB81F360035B7DD /* SVProgressHUD.bundle */,
+				9D61CB821BB81F360035B7DD /* SVProgressHUD.h */,
+				9D61CB831BB81F360035B7DD /* SVProgressHUD.m */,
+				9D61CB841BB81F360035B7DD /* SVRadialGradientLayer.h */,
+				9D61CB851BB81F360035B7DD /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D61CB561BB8173D0035B7DD /* Global Village Support */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D61CB761BB8173D0035B7DD /* Build configuration list for PBXNativeTarget "Global Village Support" */;
+			buildPhases = (
+				9D61CB531BB8173D0035B7DD /* Sources */,
+				9D61CB541BB8173D0035B7DD /* Frameworks */,
+				9D61CB551BB8173D0035B7DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Global Village Support";
+			productName = "Global Village Support";
+			productReference = 9D61CB571BB8173D0035B7DD /* Global Village Support.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D61CB6B1BB8173D0035B7DD /* Global Village SupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D61CB791BB8173D0035B7DD /* Build configuration list for PBXNativeTarget "Global Village SupportTests" */;
+			buildPhases = (
+				9D61CB681BB8173D0035B7DD /* Sources */,
+				9D61CB691BB8173D0035B7DD /* Frameworks */,
+				9D61CB6A1BB8173D0035B7DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D61CB6E1BB8173D0035B7DD /* PBXTargetDependency */,
+			);
+			name = "Global Village SupportTests";
+			productName = "Global Village SupportTests";
+			productReference = 9D61CB6C1BB8173D0035B7DD /* Global Village SupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D61CB4F1BB8173D0035B7DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "George Hanna Adly";
+				TargetAttributes = {
+					9D61CB561BB8173D0035B7DD = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = CSS2DLH755;
+					};
+					9D61CB6B1BB8173D0035B7DD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9D61CB561BB8173D0035B7DD;
+					};
+				};
+			};
+			buildConfigurationList = 9D61CB521BB8173D0035B7DD /* Build configuration list for PBXProject "Global Village Support" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D61CB4E1BB8173D0035B7DD;
+			productRefGroup = 9D61CB581BB8173D0035B7DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D61CB561BB8173D0035B7DD /* Global Village Support */,
+				9D61CB6B1BB8173D0035B7DD /* Global Village SupportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D61CB551BB8173D0035B7DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D61CB621BB8173D0035B7DD /* Main.storyboard in Resources */,
+				9D61CB671BB8173D0035B7DD /* LaunchScreen.xib in Resources */,
+				9D61CB641BB8173D0035B7DD /* Images.xcassets in Resources */,
+				9D61CB871BB81F360035B7DD /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D61CB6A1BB8173D0035B7DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D61CB531BB8173D0035B7DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D61CB5F1BB8173D0035B7DD /* ViewController.swift in Sources */,
+				9D61CB881BB81F360035B7DD /* SVProgressHUD.m in Sources */,
+				9D61CB5D1BB8173D0035B7DD /* AppDelegate.swift in Sources */,
+				9D61CB861BB81F360035B7DD /* SVIndefiniteAnimatedView.m in Sources */,
+				9D61CB891BB81F360035B7DD /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D61CB681BB8173D0035B7DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D61CB731BB8173D0035B7DD /* Global_Village_SupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D61CB6E1BB8173D0035B7DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D61CB561BB8173D0035B7DD /* Global Village Support */;
+			targetProxy = 9D61CB6D1BB8173D0035B7DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D61CB601BB8173D0035B7DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D61CB611BB8173D0035B7DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D61CB651BB8173D0035B7DD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D61CB661BB8173D0035B7DD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D61CB741BB8173D0035B7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "41d2b83c-904b-40ae-a22f-388b06b6f71b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D61CB751BB8173D0035B7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "41d2b83c-904b-40ae-a22f-388b06b6f71b";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D61CB771BB8173D0035B7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				INFOPLIST_FILE = "Global Village Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "41d2b83c-904b-40ae-a22f-388b06b6f71b";
+				SWIFT_OBJC_BRIDGING_HEADER = "Global Village Support/Header.h";
+			};
+			name = Debug;
+		};
+		9D61CB781BB8173D0035B7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mojtaba Nasiri (CSS2DLH755)";
+				INFOPLIST_FILE = "Global Village Support/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "41d2b83c-904b-40ae-a22f-388b06b6f71b";
+				SWIFT_OBJC_BRIDGING_HEADER = "Global Village Support/Header.h";
+			};
+			name = Release;
+		};
+		9D61CB7A1BB8173D0035B7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Global Village SupportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Global Village Support.app/Global Village Support";
+			};
+			name = Debug;
+		};
+		9D61CB7B1BB8173D0035B7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Global Village SupportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Global Village Support.app/Global Village Support";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D61CB521BB8173D0035B7DD /* Build configuration list for PBXProject "Global Village Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D61CB741BB8173D0035B7DD /* Debug */,
+				9D61CB751BB8173D0035B7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D61CB761BB8173D0035B7DD /* Build configuration list for PBXNativeTarget "Global Village Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D61CB771BB8173D0035B7DD /* Debug */,
+				9D61CB781BB8173D0035B7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D61CB791BB8173D0035B7DD /* Build configuration list for PBXNativeTarget "Global Village SupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D61CB7A1BB8173D0035B7DD /* Debug */,
+				9D61CB7B1BB8173D0035B7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D61CB4F1BB8173D0035B7DD /* Project object */;
+}

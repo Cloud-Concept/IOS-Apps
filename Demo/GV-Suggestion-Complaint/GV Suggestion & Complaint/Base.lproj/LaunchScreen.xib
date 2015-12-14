@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InitialPageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-h4-TZj">
+                    <rect key="frame" x="8" y="31" width="464" height="418"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qgf-h4-TZj" secondAttribute="trailing" constant="8" id="1gJ-YF-2Us"/>
+                <constraint firstItem="qgf-h4-TZj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="7lI-tK-IqW"/>
+                <constraint firstItem="qgf-h4-TZj" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="Gur-nq-Fje"/>
+                <constraint firstItem="qgf-h4-TZj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="w44-9Q-XSE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Gur-nq-Fje"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="InitialPageLogo" width="612" height="418"/>
+    </resources>
+</document>
