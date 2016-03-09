@@ -29,6 +29,9 @@ class ViewController: UIViewController,UIWebViewDelegate {
         return false;
     }
 
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        SVProgressHUD.dismiss()
+    }
     func webViewDidFinishLoad(webView: UIWebView) {
         SVProgressHUD.dismiss()
     }
@@ -36,8 +39,10 @@ class ViewController: UIViewController,UIWebViewDelegate {
         return true;
     }
     func webViewDidStartLoad(webView: UIWebView) {
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
-        SVProgressHUD.showWithStatus("Loading ...")
+        if(!SVProgressHUD.isVisible()){
+            SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
+            SVProgressHUD.showWithStatus("Loading ...")
+        }
     }
 
 }

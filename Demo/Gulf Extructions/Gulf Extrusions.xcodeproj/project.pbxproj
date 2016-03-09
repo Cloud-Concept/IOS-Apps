@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0BB1AA1C846D47006EE92F /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0BB1AC1C846D47006EE92F /* InitialViewController.xib */; };
+		9D51ECE91C82E3EE005DA7F1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51ECE71C82E3EE005DA7F1 /* InitialViewController.swift */; };
 		9D61CB5D1BB8173D0035B7DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */; };
 		9D61CB5F1BB8173D0035B7DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB5E1BB8173D0035B7DD /* ViewController.swift */; };
 		9D61CB621BB8173D0035B7DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB601BB8173D0035B7DD /* Main.storyboard */; };
@@ -16,9 +18,17 @@
 		9D61CB871BB81F360035B7DD /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D61CB811BB81F360035B7DD /* SVProgressHUD.bundle */; };
 		9D61CB881BB81F360035B7DD /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB831BB81F360035B7DD /* SVProgressHUD.m */; };
 		9D61CB891BB81F360035B7DD /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61CB851BB81F360035B7DD /* SVRadialGradientLayer.m */; };
+		9E3E7FBB70E4BBCA97B80E54 /* Pods_Gulf_Extrusions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4759913CE34C1A305A54DC43 /* Pods_Gulf_Extrusions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04E879F16C7D9343E17F2533 /* Pods-Gulf Extrusions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gulf Extrusions.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gulf Extrusions/Pods-Gulf Extrusions.release.xcconfig"; sourceTree = "<group>"; };
+		4759913CE34C1A305A54DC43 /* Pods_Gulf_Extrusions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gulf_Extrusions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82035E263E91430C5F7F2A3F /* Pods-Gulf Extrusions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gulf Extrusions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gulf Extrusions/Pods-Gulf Extrusions.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0BB1A71C846C2D006EE92F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9D0BB1A91C846C33006EE92F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9D0BB1AB1C846D47006EE92F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InitialViewController.xib; sourceTree = "<group>"; };
+		9D51ECE71C82E3EE005DA7F1 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		9D61CB571BB8173D0035B7DD /* Gulf Extrusions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gulf Extrusions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D61CB5B1BB8173D0035B7DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3E7FBB70E4BBCA97B80E54 /* Pods_Gulf_Extrusions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710DFEB779112982701622B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4759913CE34C1A305A54DC43 /* Pods_Gulf_Extrusions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8183F515A049318B84EBDDC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82035E263E91430C5F7F2A3F /* Pods-Gulf Extrusions.debug.xcconfig */,
+				04E879F16C7D9343E17F2533 /* Pods-Gulf Extrusions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9D61CB4E1BB8173D0035B7DD = {
 			isa = PBXGroup;
 			children = (
 				9D61CB591BB8173D0035B7DD /* Gulf Extrusions */,
 				9D61CB581BB8173D0035B7DD /* Products */,
+				8183F515A049318B84EBDDC6 /* Pods */,
+				710DFEB779112982701622B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +97,8 @@
 		9D61CB591BB8173D0035B7DD /* Gulf Extrusions */ = {
 			isa = PBXGroup;
 			children = (
+				9D51ECE71C82E3EE005DA7F1 /* InitialViewController.swift */,
+				9D0BB1AC1C846D47006EE92F /* InitialViewController.xib */,
 				9D61CB7C1BB81F360035B7DD /* Library */,
 				9D61CB5C1BB8173D0035B7DD /* AppDelegate.swift */,
 				9D61CB5E1BB8173D0035B7DD /* ViewController.swift */,
@@ -117,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D61CB761BB8173D0035B7DD /* Build configuration list for PBXNativeTarget "Gulf Extrusions" */;
 			buildPhases = (
+				6174EEE525745DDF1806555D /* Check Pods Manifest.lock */,
 				9D61CB531BB8173D0035B7DD /* Sources */,
 				9D61CB541BB8173D0035B7DD /* Frameworks */,
 				9D61CB551BB8173D0035B7DD /* Resources */,
+				065C9C2E50053AEDD9318B8B /* Embed Pods Frameworks */,
+				B92CA1EFF44D64D5337BEB7F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,7 +177,7 @@
 				TargetAttributes = {
 					9D61CB561BB8173D0035B7DD = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 7L63S6S4ES;
+						DevelopmentTeam = TNE5L4MZVX;
 					};
 				};
 			};
@@ -171,12 +206,61 @@
 			files = (
 				9D61CB621BB8173D0035B7DD /* Main.storyboard in Resources */,
 				9D61CB671BB8173D0035B7DD /* LaunchScreen.xib in Resources */,
+				9D0BB1AA1C846D47006EE92F /* InitialViewController.xib in Resources */,
 				9D61CB641BB8173D0035B7DD /* Images.xcassets in Resources */,
 				9D61CB871BB81F360035B7DD /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065C9C2E50053AEDD9318B8B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gulf Extrusions/Pods-Gulf Extrusions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6174EEE525745DDF1806555D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B92CA1EFF44D64D5337BEB7F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gulf Extrusions/Pods-Gulf Extrusions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D61CB531BB8173D0035B7DD /* Sources */ = {
@@ -186,6 +270,7 @@
 				9D61CB5F1BB8173D0035B7DD /* ViewController.swift in Sources */,
 				9D61CB881BB81F360035B7DD /* SVProgressHUD.m in Sources */,
 				9D61CB5D1BB8173D0035B7DD /* AppDelegate.swift in Sources */,
+				9D51ECE91C82E3EE005DA7F1 /* InitialViewController.swift in Sources */,
 				9D61CB861BB81F360035B7DD /* SVIndefiniteAnimatedView.m in Sources */,
 				9D61CB891BB81F360035B7DD /* SVRadialGradientLayer.m in Sources */,
 			);
@@ -194,10 +279,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9D0BB1AC1C846D47006EE92F /* InitialViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D0BB1AB1C846D47006EE92F /* en */,
+			);
+			name = InitialViewController.xib;
+			sourceTree = "<group>";
+		};
 		9D61CB601BB8173D0035B7DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9D61CB611BB8173D0035B7DD /* Base */,
+				9D0BB1A71C846C2D006EE92F /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -206,6 +300,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9D61CB661BB8173D0035B7DD /* Base */,
+				9D0BB1A91C846C33006EE92F /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "fea915c8-9ef2-479b-8bca-9ba4c17e0f6f";
+				PROVISIONING_PROFILE = "bbbeb6f4-0ad3-4f25-aab3-e9149b9235c8";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,7 +391,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "fea915c8-9ef2-479b-8bca-9ba4c17e0f6f";
+				PROVISIONING_PROFILE = "bbbeb6f4-0ad3-4f25-aab3-e9149b9235c8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -305,27 +400,73 @@
 		};
 		9D61CB771BB8173D0035B7DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82035E263E91430C5F7F2A3F /* Pods-Gulf Extrusions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Dubai Aviation City Corporation - Dubai World Central (7L63S6S4ES)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gulf Extrusions Co. LLC (TNE5L4MZVX)";
 				INFOPLIST_FILE = "Gulf Extrusions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.Gulf-Extrusions";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"SalesforceNetwork\"",
+					"-framework",
+					"\"SalesforceRestAPI\"",
+					"-framework",
+					"\"SalesforceSDKCore\"",
+					"-framework",
+					"\"SmartStore\"",
+					"-framework",
+					"\"SmartSync\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.ae.Gulf-Extrusions";
 				PRODUCT_NAME = "Gulf Extrusions";
+				PROVISIONING_PROFILE = "bbbeb6f4-0ad3-4f25-aab3-e9149b9235c8";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gulf Extrusions/Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9D61CB781BB8173D0035B7DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E879F16C7D9343E17F2533 /* Pods-Gulf Extrusions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Dubai Aviation City Corporation - Dubai World Central (7L63S6S4ES)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gulf Extrusions Co. LLC (TNE5L4MZVX)";
 				INFOPLIST_FILE = "Gulf Extrusions/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.Gulf-Extrusions";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"SalesforceNetwork\"",
+					"-framework",
+					"\"SalesforceRestAPI\"",
+					"-framework",
+					"\"SalesforceSDKCore\"",
+					"-framework",
+					"\"SmartStore\"",
+					"-framework",
+					"\"SmartSync\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudconcept.ae.Gulf-Extrusions";
 				PRODUCT_NAME = "Gulf Extrusions";
+				PROVISIONING_PROFILE = "bbbeb6f4-0ad3-4f25-aab3-e9149b9235c8";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gulf Extrusions/Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
