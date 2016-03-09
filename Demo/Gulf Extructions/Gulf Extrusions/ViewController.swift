@@ -25,7 +25,8 @@ class ViewController: UIViewController,UIWebViewDelegate {
 //        self.webview.scalesPageToFit = YES;
 //        
 //         let url = NSURL(string: "\(SFUserAccountManager.sharedInstance().currentUser.credentials.instanceUrl.absoluteString)/secur/frontdoor.jsp?sid=\(SFUserAccountManager.sharedInstance().currentUser.credentials.accessToken)&retURL=one/one.app&display=touch")
-let url = NSURL(string: "https://gulfex.force.com/one/one.app")
+        retrieveCookies()
+        let url = NSURL(string: "https://gulfex.force.com/one/one.app")
         
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
@@ -42,35 +43,43 @@ let url = NSURL(string: "https://gulfex.force.com/one/one.app")
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
          SVProgressHUD.dismiss()
     }
-    func webViewDidFinishLoad(webView: UIWebView) {
-        SVProgressHUD.dismiss()
+    
+    func saveCookies(){
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let cookiesData = NSKeyedArchiver.archivedDataWithRootObject(NSHTTPCookieStorage.sharedHTTPCookieStorage().cookies!)
         
-        
-//        NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];
-//        [cookieProperties setObject:name forKey:NSHTTPCookieName];
-//        [cookieProperties setObject:strValue forKey:NSHTTPCookieValue];
-//        [cookieProperties setObject:@"myserver.com" forKey:NSHTTPCookieDomain];    // Without http://
-//        [cookieProperties setObject:@"myserver.com" forKey:NSHTTPCookieOriginURL]; // Without http://
-//        [cookieProperties setObject:@"/" forKey:NSHTTPCookiePath];
-//        
-//        // set expiration to one month from now or any NSDate of your choosing
-//        // this makes the cookie sessionless and it will persist across web sessions and app launches
-//        /// if you want the cookie to be destroyed when your app exits, don't set this
-//        [cookieProperties setObject:[[NSDate date] dateByAddingTimeInterval:2629743] forKey:NSHTTPCookieExpires];
-//        
-//        NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:cookieProperties];
-//        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
-        
+        defaults.setObject(cookiesData, forKey: "cookies")
+        defaults.synchronize()
     }
+    func deleteCookies(){
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("cookies")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    func retrieveCookies(){
+        if (NSUserDefaults.standardUserDefaults().objectForKey("cookies") != nil)
+        {
+            let cookies = NSKeyedUnarchiver.unarchiveObjectWithData(NSUserDefaults.standardUserDefaults().objectForKey("cookies") as! NSData) as! NSArray
+            let cookieStorage = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+            for cookie in cookies
+            {
+                cookieStorage.setCookie(cookie as! NSHTTPCookie)
+            }
+        }
+    }
+
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         return true;
     }
+    
     func webViewDidStartLoad(webView: UIWebView) {
         if(!SVProgressHUD.isVisible()){
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
             SVProgressHUD.showWithStatus("Loading ...")
         }
     }
-
+    func webViewDidFinishLoad(webView: UIWebView) {
+        SVProgressHUD.dismiss()
+        saveCookies()
+    }
 }
 
