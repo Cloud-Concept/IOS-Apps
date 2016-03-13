@@ -5,16 +5,16 @@ use_frameworks!
 
 target 'Gulf Extrusions' do
 
-source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' # need to be first 
-source 'https://github.com/CocoaPods/Specs.git'
-
-use_frameworks!
-pod 'SalesforceSDKCore'
-pod 'SalesforceNetwork'
-pod 'SalesforceRestAPI'
-pod 'FMDB'
-pod 'SmartStore'
-pod 'SmartSync'
+#source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' # need to be first 
+#source 'https://github.com/CocoaPods/Specs.git'
+#
+#use_frameworks!
+#pod 'SalesforceSDKCore'
+#pod 'SalesforceNetwork'
+#pod 'SalesforceRestAPI'
+#pod 'FMDB'
+#pod 'SmartStore'
+#pod 'SmartSync'
 
 end
 
